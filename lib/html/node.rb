@@ -306,7 +306,7 @@ module HTML #:nodoc:
       return false if xml && @closing.nil?
       !@closing.nil? ||
         @name =~ /^(img|br|hr|link|meta|area|base|basefont|
-                    col|frame|input|isindex|param)$/ox
+                    col|frame|input|isindex|param|embed|source)$/ox
     end
 
     # Returns a textual representation of the node
